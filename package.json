@@ -1,6 +1,6 @@
 {
   "name": "react-8bit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./lib/react-8bit.js",
   "homepage": "http://chuson1996.github.io/react-8bit",
   "devDependencies": {
