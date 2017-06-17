@@ -12,7 +12,7 @@ export default class Image8Bit extends Component {
     this._img = new Image();
     this._img.onload = () => {
       eightBit(this.canvas, this._img, this.props.scaleFactor);
-      if (this.props.onLoad) this.props.onLoad(_img);
+      if (this.props.onLoad) this.props.onLoad(this._img);
     };
     this._img.src = this.props.src;
   }
@@ -22,7 +22,7 @@ export default class Image8Bit extends Component {
       this._img = new Image();
       this._img.onload = () => {
         eightBit(this.canvas, this._img, this.props.scaleFactor);
-        if (this.props.onLoad) this.props.onLoad(_img);
+        if (this.props.onLoad) this.props.onLoad(this._img);
       };
       this._img.src = this.props.src;
       return;
