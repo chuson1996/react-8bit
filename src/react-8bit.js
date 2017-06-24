@@ -24,7 +24,7 @@ export default class Image8Bit extends Component {
         eightBit(this.canvas, this._img, this.props.scaleFactor);
         if (this.props.onLoad) this.props.onLoad(this._img);
       };
-      this._img.src = this.props.src;
+      this._img.src = nextProps.src;
       return;
     }
     if (this.props.scaleFactor !== nextProps.scaleFactor) {
